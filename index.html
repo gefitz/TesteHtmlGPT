@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Álbuns da NASA</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="album-gallery" id="album-gallery">
+    </div>
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="media-container">
+                <div id="modal-image" class="media"></div>
+                <a class="prev" >&#10094;</a>
+                <a class="next" >&#10095;</a>
+            </div>
+            <div class="modal-footer">
+                <span id="current-index"></span> / <span id="total-items"></span>
+                <div class="select-photo" id="select-photo-container">
+                    <div id="select-photo" class="select-photo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
